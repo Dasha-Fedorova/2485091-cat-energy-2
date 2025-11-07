@@ -153,7 +153,7 @@
         </li>
       </ul>
     </section>
-    <sestion class="others">
+    <section class="others">
       <h2 class="others__title">Дополнительные товары</h2>
       <ul class="others__list">
         <li class="others__item">
@@ -189,17 +189,29 @@
           <a class="others__button button" href="#">Заказать</a>
         </li>
       </ul>
-    </sestion>
-    <section class="promo">
-      <h2 class="promo__title">Акции и новинки</h2>
-      <p class="promo__content">Закажите все и получите чехол для кота в подарок!</p>
-      <b>Подпишитесь на наши новости и не пропустите ни одного предложения!</b>
+      <div class="others__promo-content">Закажите все и получите чехол для кота в подарок!</div>
+    </section>
+    <section class="subscription">
+      <h2 class="subscription__title">Акции и новинки</h2>
+      <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label>
-          <input type="text" name="login" value="kuklachev@gmail.com">
-          <input type="submit" value="Подписаться">
+          <input class="subscription__input" type="text" name="email" placeholder="kuklachev@gmail.com">
         </label>
+        <button class="subscription__button button" type="submit">Подписаться</button>
       </form>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <p class="contacts__content">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <address>
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </address>
+      <a class="map" href="#">
+        <img class="map__image" src="#" width="768" height="400" alt="Карта Санкт-Петербурга">
+      </a>
     </section>
   </main>
   <footer class="main-footer">
