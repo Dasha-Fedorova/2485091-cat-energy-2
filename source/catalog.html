@@ -41,7 +41,7 @@
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
-        <li class="catalog__product-card">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="161" height="172" src="#" alt="Cat Energy Pro Курица 500 г">
             <h3 class="catalog__product-name">Cat Energy Pro 500 г</h3>
@@ -56,7 +56,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="168" height="206" src="#" alt="Cat Energy Pro Курица 1000 г">
             <h3 class="catalog__product-name">Cat Energy Pro 1000 г</h3>
@@ -71,7 +71,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="163" height="174" src="#" alt="Cat Energy Pro Рыба 500 г">
             <h3 class="catalog__product-name">Cat Energy Pro 500 г</h3>
@@ -86,7 +86,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="168" height="200" src="#" alt="Cat Energy Pro Рыба 1000 г">
             <h3 class="catalog__product-name">Cat Energy Pro 1000 г</h3>
@@ -101,7 +101,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="161" height="171" src="#" alt="Cat Energy Slim Гречка 500 г">
             <h3 class="catalog__product-name">Cat Energy Slim 500 г</h3>
@@ -116,7 +116,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="168" height="200" src="#" alt="Cat Energy Slim Гречка 1000 г">
             <h3 class="catalog__product-name">Cat Energy Slim 1000 г</h3>
@@ -131,7 +131,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card">
+        <li class="catalog__card--more">
           <a class="catalog__link" href="#">
             <img class="catalog__image" width="163" height="174" src="#" alt="Cat Energy Slim Рис 500 г">
             <h3 class="catalog__product-name">Cat Energy Slim 500 г</h3>
@@ -146,7 +146,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__product-card ">
+        <li class="catalog__card ">
           <h3 class="catalog__product-name">Показать еще 100500 товаров</h3>
           <p class="catalog__text-content">На самом деле вкусов гораздо больше!</p>
           <button class="catalog__button button" type="button">Показать все</button>
@@ -159,32 +159,40 @@
         <li class="others__item">
           <h3 class="others__name">Сахарозаменитель</h3>
           <dl class="others__description">
-            <dt class="others__caption">1 упаковка (100 г)</dt>
-            <dd class="others__content">200 <span>&#8381;</span> </dd>
+            <dt class="visually-hidden">Размер упаковки</dt>
+            <dd class="others__content">1 упаковка (100 г)</dd>
+            <dt class="visually-hidden">Цена</dt>
+            <dd class="others__content">200 &nbsp;₽</dd>
           </dl>
           <a class="others__button button" href="#">Заказать</a>
         </li>
         <li class="others__item">
           <h3 class="others__name">Питьевая вода</h3>
           <dl class="others__description">
-            <dt class="others__caption">5 литров</dt>
-            <dd class="others__content">50 <span>&#8381;</span> </dd>
+            <dt class="visually-hidden">Размер упаковки</dt>
+            <dd class="others__content">5 литров</dd>
+            <dt class="visually-hidden">Цена</dt>
+            <dd class="others__content">50 &nbsp;₽</dd>
           </dl>
           <a class="others__button button" href="#">Заказать</a>
         </li>
         <li class="others__item">
           <h3 class="others__name">Молоко</h3>
           <dl class="others__description">
-            <dt class="others__caption">1 литр</dt>
-            <dd class="others__content">100 <span>&#8381;</span> </dd>
+            <dt class="visually-hidden">Размер упаковки</dt>
+            <dd class="others__content">1 литр</dd>
+            <dt class="visually-hidden">Цена</dt>
+            <dd class="others__content">100 &nbsp;₽</dd>
           </dl>
           <a class="others__button button" href="#">Заказать</a>
         </li>
         <li class="others__item">
           <h3 class="others__name">Витамины</h3>
           <dl class="others__description">
-            <dt class="others__caption">1 упаковка (30 г)</dt>
-            <dd class="others__content">300 <span>&#8381;</span> </dd>
+            <dt class="visually-hidden">Размер упаковки</dt>
+            <dd class="others__content">1 упаковка (30 г)</dd>
+            <dt class="visually-hidden">Цена</dt>
+            <dd class="others__content">300 &nbsp;₽</dd>
           </dl>
           <a class="others__button button" href="#">Заказать</a>
         </li>
@@ -196,7 +204,7 @@
       <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label>
-          <input class="subscription__input" type="text" name="email" placeholder="kuklachev@gmail.com">
+          <input class="subscription__input" type="email" name="email" placeholder="kuklachev@gmail.com">
         </label>
         <button class="subscription__button button" type="submit">Подписаться</button>
       </form>
