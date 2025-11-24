@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -47,7 +51,11 @@
         <p class="hero__text">
           Занялся собой? Займись котом!
         </p>
-        <img class="hero__image" src="#" alt="Cat Energy с курицей" width="280" height="270">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/images-content/index-chicken500-desktop@1x.png 1x, images/images-content/index-chicken500-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/images-content/index-chicken500-tablet@1x.png 1x, images/images-content/index-chicken500-tablet@2x.png 2x">
+          <img class="hero__image" src="images/images-content/index-chicken500-mobile@1x.png" srcset="images/images-content/index-chicken500-mobile@2x.png 2x" alt="Cat Energy с курицей" width="280" height="270">
+        </picture>
         <a class="hero__link hero__link--accent" href="#">
           Подобрать программу
         </a>
@@ -132,7 +140,14 @@
           <p class="costs__content">15 000 руб.</p>
         </div>
         <div class="demo">
-          <img class="demo__image " src="#" alt="Демонстрация" width="560" height="512">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/images-content/demo-before-tablet-desktop@1x.png 1x, images/images-content/demo-before-tablet-desktop@2x.png 2x">
+            <img class="demo__image" src="images/images-content/demo-before-mobile@1x.png" srcset="images/images-content/demo-before-mobile@2x.png 2x" alt="Котик до Cat Energy" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/images-content/demo-after-tablet-desktop@1x.png 1x, images/images-content/demo-after-tablet-desktop@2x.png 2x">
+            <img class="demo__image" src="images/images-content/demo-after-mobile@1x.png" srcset="images/images-content/demo-after-mobile@2x.png 2x" alt="Котик после Cat Energy" width="280" height="256">
+          </picture>
         </div>
       </div>
     </section>
