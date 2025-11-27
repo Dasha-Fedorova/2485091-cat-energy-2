@@ -1,0 +1,26 @@
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $title-color-text;
+}
+
+.catalog__product-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-gray-text;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.catalog__card-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+.catalog__button--more {
+  background-color: $bg-basic-grey;
+  color: $base-color-text;
+}

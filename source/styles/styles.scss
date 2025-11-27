@@ -6,9 +6,18 @@
 
 
 /* BLOCKS */
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
-@import "./blocks/nav.scss";
-@import "./blocks/main.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/instruction.scss";
+@import "./blocks/result.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/others.scss";
+@import "./blocks/subscription.scss";
 @import "./blocks/footer.scss";
 
