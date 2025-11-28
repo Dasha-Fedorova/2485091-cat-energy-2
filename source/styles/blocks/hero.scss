@@ -1,0 +1,27 @@
+.hero {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $bg-basic-green;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.hero__link {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $bg-basic-green;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
