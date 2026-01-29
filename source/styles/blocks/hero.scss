@@ -1,6 +1,6 @@
 .hero {
   font-family: "Oswald", sans-serif;
-  color: #ffffff;
+  color: $basic-white-text;
   text-transform: uppercase;
   background-color: $bg-basic-green;
   text-align: center;
@@ -18,7 +18,7 @@
 
 .hero__link {
   font-family: "Oswald", sans-serif;
-  color: #ffffff;
+  color: $basic-white-text;
   text-transform: uppercase;
   background-color: $bg-basic-green;
   text-align: center;
