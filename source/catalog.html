@@ -16,30 +16,37 @@
 <body>
   <header class="main-header">
     <a class="main-header__link" href="index.html">
-      <img class="main-header__logo" width="202" height="59" src="#" alt="Логотип Cat Energy">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню
-        </span></button>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--active" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <picture class="main-header__logo-picture">
+        <source media="(min-width: 1440px)" srcset="images/icon-logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/icon-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img src="images/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
+      <picture class="main-header__logo-text">
+        <source media="(min-width: 1440px)" srcset="images/icon-logo-text.svg" width="118" height="21" type="image/svg+xml">
+        <img src="images/icon-logo-text.svg" width="101" height="18" alt="Товарный знак Cat Energy.">
+      </picture>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню
+          </span></button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
   </header>
   <main class="main-inner">
     <section class="catalog">
@@ -253,7 +260,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__link" href="#">
-      <img class="main-footer__logo" src="#" width="128" height="24" alt="Логотип Cat Energy">
+      <img class="main-footer__logo" src="images/icon-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
     </a>
     <h2 class="visually-hidden">Наши социальные сети</h2>
     <ul class="main-footer__list">
