@@ -5,3 +5,41 @@
   color: $title-color-text;
   text-align: center;
 }
+
+.instruction__item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.instruction__item--icon-leaf {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+.instruction__item--icon-hot-water {
+  background-image: url("../../icons/stack.svg#icon-hot-water");
+}
+
+.instruction__item--icon-tableware {
+  background-image: url("../../icons/stack.svg#icon-tableware");
+}
+
+.instruction__item--icon-clock {
+  background-image: url("../../icons/stack.svg#icon-clock");
+}
+
+.instruction__content--icon-1 {
+  background-image: url("../../icons/stack.svg#icon-1");
+}
+
+.instruction__content--icon-2 {
+  background-image: url("../../icons/stack.svg#icon-2");
+}
+
+.instruction__content--icon-3 {
+  background-image: url("../../icons/stack.svg#icon-3");
+}
+
+.instruction__content--icon-4 {
+  background-image: url("../../icons/stack.svg#icon-4");
+}

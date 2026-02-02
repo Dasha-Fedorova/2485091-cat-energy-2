@@ -3,3 +3,14 @@
   color: #ffffff;
   padding: 10px 15px;
 }
+
+.main-header__logo-picture:hover,
+.main-header__logo-text:hover {
+  opacity: 0.8;
+}
+
+
+.main-header__logo-picture:active,
+.main-header__logo-text:active {
+  opacity: 0.6;
+}

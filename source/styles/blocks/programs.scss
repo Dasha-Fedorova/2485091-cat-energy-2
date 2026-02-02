@@ -7,16 +7,34 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
 }
-
 
 .programs__link {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+  mask-image: url("../../icons/stack.svg#icon-arrow");
+  background-color: $title-color-text;
+  width: 32;
+  height: 10;
+}
+
+.programs__link:active {
+  opacity: 0.3;
 }
 
 .programs__list {
   background-color: $bg-basic-grey;
+}
+
+.programs__title--icon-cat-back {
+  background-image: url("../../icons/stack.svg#icon-cat-back");
+}
+
+.programs__title--icon-cat-back2 {
+  background-image: url("../../icons/stack.svg#icon-cat-back2");
 }

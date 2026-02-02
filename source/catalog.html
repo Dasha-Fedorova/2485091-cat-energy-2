@@ -25,28 +25,29 @@
         <source media="(min-width: 1440px)" srcset="images/icon-logo-text.svg" width="118" height="21" type="image/svg+xml">
         <img src="images/icon-logo-text.svg" width="101" height="18" alt="Товарный знак Cat Energy.">
       </picture>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню
-          </span></button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+    </a>
+    <nav class="navigation">
+      <button class="navigation__toggle navigation__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню
+        </span></button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main-inner">
     <section class="catalog">
@@ -164,7 +165,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__card catalog__card--more">
+        <li class="catalog__card">
           <a class="catalog__link" href="#">
             <picture>
               <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="images/images-content/card-rice500-tablet-desktop@1x.png 1x, images/images-content/card-rice500-tablet-desktop@2x.png 2x">
@@ -182,7 +183,7 @@
           </dl>
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
-        <li class="catalog__card ">
+        <li class="catalog__card catalog__card--more">
           <h3 class="catalog__product-name">Показать еще 100500 товаров</h3>
           <p class="catalog__text-content">На самом деле вкусов гораздо больше!</p>
           <button class="catalog__button catalog__button--more button" type="button">Показать все</button>
@@ -259,26 +260,26 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__link" href="#">
+    <a class="main-footer__link-logo" href="index.html">
       <img class="main-footer__logo" src="images/icon-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
     </a>
     <h2 class="visually-hidden">Наши социальные сети</h2>
     <ul class="main-footer__list">
-      <li class="main-footer__item">
+      <li class="main-footer__item main-footer__item--vkontakte">
         <a class="main-footer__link" href="#">
           <span class="visually-hidden">
             VKontakte
           </span>
         </a>
       </li>
-      <li class="main-footer__item">
+      <li class="main-footer__item main-footer__item--youtube">
         <a class="main-footer__link" href="#">
           <span class="visually-hidden">
             YouTube
           </span>
         </a>
       </li>
-      <li class="main-footer__item">
+      <li class="main-footer__item main-footer__item--telegram">
         <a class="main-footer__link" href="#">
           <span class="visually-hidden">
             Telegram
@@ -288,7 +289,6 @@
     </ul>
     <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__link">HTML Academy</span>
-      <img class="copyright__image" src="#" alt="Логотип HTML Academy" width="27" height="34">
     </a>
   </footer>
 </body>

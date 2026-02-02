@@ -1,3 +1,52 @@
 .main-footer {
-  background-color: $bg-basic-grey;
+  font-family: "Lato", sans-serif;
+}
+
+.main-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo:active {
+  opacity: 0.6;
+}
+
+.main-footer__item {
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  background-color: $special-gray;
+}
+
+.main-footer__item--vkontakte {
+  mask-image: url("../../icons/stack.svg#icon-logo-vkontakte");
+}
+
+.main-footer__item:hover,
+.main-footer__item:focus {
+  background-color: $bg-basic-green;
+}
+
+.copyright {
+  mask-image: url("../../icons/stack.svg#icon-logo-html");
+  background-color: $special-gray;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright:hover {
+  background-color: $bg-basic-green;
+}
+
+.main-footer__item--telegram {
+  mask-image: url("../../icons/stack.svg#icon-logo-telegram");
+}
+
+.main-footer__item--youtube {
+  mask-image: url("../../icons/stack.svg#icon-logo-youtube");
+}
+
+.main-footer__logo:active,
+.main-footer__item:active,
+.copyright:active {
+  opacity: 0.3;
 }

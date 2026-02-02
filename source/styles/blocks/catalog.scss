@@ -19,6 +19,12 @@
   line-height: 16px;
 }
 
+.catalog__card--more {
+  background-image: url("../../icons/stack.svg#icon-plus");
+  background-size: 30 30;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .catalog__button--more {
   background-color: $bg-basic-grey;
