@@ -3,24 +3,35 @@
   text-transform: uppercase;
 }
 
-.programs__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 37px;
+.programs__item {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
 }
 
-.programs__link {
+.programs__title {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 37px;
   text-align: center;
-  mask-image: url("../../icons/stack.svg#icon-arrow");
-  background-color: $title-color-text;
-  width: 32;
-  height: 10;
+}
+
+.programs__link {
+  position: relative;
+}
+
+.programs__link::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  width: 32px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .programs__link:active {
@@ -31,10 +42,12 @@
   background-color: $bg-basic-grey;
 }
 
-.programs__title--icon-cat-back {
+.programs__item--icon-cat-back {
   background-image: url("../../icons/stack.svg#icon-cat-back");
+  background-size: 50px 53px;
 }
 
-.programs__title--icon-cat-back2 {
+.programs__item--icon-cat-back2 {
   background-image: url("../../icons/stack.svg#icon-cat-back2");
+  background-size: 67px 50px;
 }

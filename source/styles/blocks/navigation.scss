@@ -8,20 +8,26 @@
 }
 
 .navigation__toggle {
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: contains;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+.navigation__toggle:hover,
+.navigation__toggle:focus {
+  opacity: 0.8;
+}
+
+.navigation__toggle:active {
+  opacity: 0.6;
 }
 
 .navigation__toggle--open {
-  mask-image: url("../../icons/stack.svg#icon-humburger-menu");
-  background-color: $title-color-text;
-  width: 18px;
-  height: 18px;
+  background-image: url("../../icons/stack.svg#icon-humburger-menu");
 }
 
 .navigation__toggle--close {
-  mask-image: url("../../icons/stack.svg#icon-cross");
-  width: 24px;
-  height: 24px;
+  background-image: url("../../icons/stack.svg#icon-cross");
 }
