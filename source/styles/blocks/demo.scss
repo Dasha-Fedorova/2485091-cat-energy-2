@@ -1,0 +1,18 @@
+.demo__button {
+  display: block;
+  mask-image: url("../../icons/stack.svg#icon-curtain");
+  background-color: $special-gray;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  height: 256px;
+  width: 4px;
+}
+
+.demo__button:hover {
+  background-color: $bg-basic-green;
+}
+
+.demo__button:active {
+  opacity: 0.6;
+}

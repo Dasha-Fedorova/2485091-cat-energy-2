@@ -6,3 +6,28 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.navigation__toggle {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+.navigation__toggle:hover,
+.navigation__toggle:focus {
+  opacity: 0.8;
+}
+
+.navigation__toggle:active {
+  opacity: 0.6;
+}
+
+.navigation__toggle--open {
+  background-image: url("../../icons/stack.svg#icon-humburger-menu");
+}
+
+.navigation__toggle--close {
+  background-image: url("../../icons/stack.svg#icon-cross");
+}
