@@ -31,3 +31,30 @@
 .navigation__toggle--close {
   background-image: url("../../icons/stack.svg#icon-cross");
 }
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 710px;
+    margin: 0 auto;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__link {
+    width: 1200px;
+    color: $basic-white-text;
+    background-color: $bg-basic-green;
+  }
+}

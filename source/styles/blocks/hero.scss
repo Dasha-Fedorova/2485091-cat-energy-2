@@ -25,3 +25,10 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .hero {
+    color: $title-color-text;
+    background-color: $basic-white-text;
+  }
+}

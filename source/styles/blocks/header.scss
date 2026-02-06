@@ -1,7 +1,9 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
+.main-header {
+  background-color: $basic-white-text;
+  color: $title-color-text;
   padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__logo-picture:hover,
