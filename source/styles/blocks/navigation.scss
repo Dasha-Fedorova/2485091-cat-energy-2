@@ -36,11 +36,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    display: flex;
     justify-content: space-between;
     width: 710px;
     margin: 0 auto;
@@ -56,5 +56,9 @@
     width: 1200px;
     color: $basic-white-text;
     background-color: $bg-basic-green;
+  }
+
+  .navigation__list {
+    flex-wrap: nowrap;
   }
 }

@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.main-header__logo {
+  height: 38px;
+}
+
 .main-header__logo-picture:hover,
 .main-header__logo-text:hover {
   opacity: 0.8;
@@ -20,3 +24,4 @@
 .main-header__logo-text:active {
   opacity: 0.6;
 }
+

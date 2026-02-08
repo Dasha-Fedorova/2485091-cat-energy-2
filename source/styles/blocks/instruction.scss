@@ -1,9 +1,19 @@
+.instruction {
+  height: 600px;
+}
+
 .instruction__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
   color: $title-color-text;
   text-align: center;
+}
+
+.instruction__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .instruction__item {
@@ -42,4 +52,19 @@
 
 .instruction__content--icon-4 {
   background-image: url("../../icons/stack.svg#icon-4");
+}
+
+@media (min-width: $tablet-width) {
+  .instruction__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 280px 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
