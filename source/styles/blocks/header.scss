@@ -3,7 +3,8 @@
   color: $title-color-text;
   padding: 10px 15px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+
 }
 
 .main-header__logo {

@@ -5,6 +5,12 @@
   color: $title-color-text;
 }
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .catalog__product-name {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -29,4 +35,20 @@
 .catalog__button--more {
   background-color: $bg-basic-grey;
   color: $base-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 511px 511px 511px 511px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 511px 511px;
+  }
 }

@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.others__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .others__name {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -35,4 +41,44 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 78px 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .others__list {
+    display: grid;
+    grid-template-columns: 708px;
+    grid-template-rows: 139px 139px 139px 139px;
+  }
+
+  .others__item {
+    border: 1px solid #cdcdcd;
+  }
+
+  .others__promo-content {
+    width: 707px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .others {
+    display: grid;
+    grid-template-columns: 976px 245px;
+    grid-template-rows: 120px 72px 72px 72px 72px;
+    height: 408px;
+  }
+
+  .others__title {
+    grid-area: 1/1/1/2;
+  }
+
+  .others__list {
+    grid-area: 2/1/5/1;
+  }
+
+  .others__promo-content {
+    width: 245px;
+    height: 288px;
+    grid-area: 2/2/5/2;
+  }
 }

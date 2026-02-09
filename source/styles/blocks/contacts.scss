@@ -1,3 +1,10 @@
+.contacts__container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 112px;
+}
+
 .contacts__content {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -9,6 +16,12 @@
 .address {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    height: 200px;
+  }
 }
 
 
