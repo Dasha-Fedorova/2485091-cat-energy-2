@@ -59,12 +59,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .navigation__link--index {
-    width: 1200px;
+  .navigation__list--index {
     color: $basic-white-text;
     background-color: $bg-basic-green;
-    display: flex;
-    flex-wrap: nowrap;
   }
 
   .navigation__list {
