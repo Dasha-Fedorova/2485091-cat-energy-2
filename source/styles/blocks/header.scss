@@ -10,18 +10,15 @@
   height: 38px;
 }
 
-.main-header__logo-picture:hover,
-.main-header__logo-text:hover {
+.main-header__logo:hover {
   opacity: 0.8;
 }
 
-.main-header__logo-picture:focus,
-.main-header__logo-text:focus {
+.main-header__logo:focus {
   opacity: 0.8;
 }
 
-.main-header__logo-picture:active,
-.main-header__logo-text:active {
+.main-header__logo:active {
   opacity: 0.6;
 }
 
