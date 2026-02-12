@@ -11,8 +11,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: $basic-white-text;
   width: 24px;
   height: 24px;
+  border: none;
 }
 
 .navigation__list--catalog {
@@ -35,22 +37,33 @@
 
 .navigation__toggle--close {
   background-image: url("../../icons/stack.svg#icon-cross");
+  display: none;
 }
 
 .navigation__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-content: center;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .navigation__list {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    flex-wrap: nowrap;
+    width: 436px;
     color: $title-color-text;
     background-color: $basic-white-text;
+    margin: 0 auto;
+  }
+
+  .navigation__item {
+    margin-left: 30px;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .navigation__toggle {
@@ -62,9 +75,6 @@
   .navigation__list--index {
     color: $basic-white-text;
     background-color: $bg-basic-green;
-  }
-
-  .navigation__list {
-    flex-wrap: nowrap;
+    width: 475px;
   }
 }

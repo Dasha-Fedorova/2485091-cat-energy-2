@@ -2,18 +2,18 @@
   background-color: $basic-white-text;
   color: $title-color-text;
   padding: 10px 15px;
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 38px;
+  margin: 14px 20px;
+  width: 279px;
 }
 
 .main-header__logo {
   height: 38px;
 }
 
-.main-header__logo:hover {
-  opacity: 0.8;
-}
-
+.main-header__logo:hover,
 .main-header__logo:focus {
   opacity: 0.8;
 }
@@ -22,17 +22,19 @@
   opacity: 0.6;
 }
 
-.main-header__logo-picture:hover,
-.main-header__logo-text:hover {
-  opacity: 0.8;
-}
+@media (min-width: $tablet-width) {
+  .main-header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    width: 704px;
+    margin: 20px 25px;
+  }
 
-.main-header__logo-picture:focus,
-.main-header__logo-text:focus {
-  opacity: 0.8;
-}
+  .main-neader__logo-container {
+    grid-area: 1/1/1/1;
+  }
 
-.main-header__logo-picture:active,
-.main-header__logo-text:active {
-  opacity: 0.6;
+  .navigation__list {
+    grid-area: 1/2/1/2;
+  }
 }
