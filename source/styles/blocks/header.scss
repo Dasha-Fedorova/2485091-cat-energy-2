@@ -39,6 +39,7 @@
   .main-header {
     width: 704px;
     min-height: 50px;
+    margin: 32px;
   }
 
   .main-header__logo-picture {
@@ -56,5 +57,8 @@
 @media (min-width: $desktop-width) {
   .main-header {
     width: 1220px;
+    margin-left: 100px;
+    margin-right: 110px;
+    margin-top: 50px;
   }
 }
