@@ -10,6 +10,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
+  min-height: 266px;
+  background-color: $bg-basic-grey;
 }
 
 .programs__title {
@@ -37,11 +39,6 @@
 
 .programs__link:active {
   opacity: 0.3;
-}
-
-.programs__list {
-  padding: 60px;
-  background-color: $bg-basic-grey;
 }
 
 .programs__item--icon-cat-back {
