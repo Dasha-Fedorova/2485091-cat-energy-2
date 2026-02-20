@@ -11,9 +11,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: $basic-white-text;
   width: 24px;
   height: 24px;
+  border: none;
 }
+
+.navigation__list--catalog {
+  display: none;
+}
+
 
 .navigation__toggle:hover,
 .navigation__toggle:focus {
@@ -30,4 +37,74 @@
 
 .navigation__toggle--close {
   background-image: url("../../icons/stack.svg#icon-cross");
+  display: none;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 436px;
+    color: $title-color-text;
+    background-color: $basic-white-text;
+    flex-grow: 1;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 33px;
+  }
+
+  .navigation__link--active {
+    text-decoration: underline;
+    text-decoration-color: $bg-basic-green;
+  }
+
+  .navigation__item {
+    margin-right: 33px;
+
+    &last-child {
+      margin-right: 0;
+    }
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__item:hover,
+  .navigation__item:focus {
+    opacity: 0.6;
+  }
+
+  .navigation__item:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    width: 475px;
+  }
+
+  .navigation__list--index {
+    background-color: $bg-basic-green;
+  }
+
+  .navigation__link--active-index {
+    text-decoration-color: $basic-white-text;
+  }
+
+  .navigation__link--index {
+    color: $basic-white-text;
+  }
 }

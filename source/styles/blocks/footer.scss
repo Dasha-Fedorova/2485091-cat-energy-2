@@ -1,3 +1,7 @@
+.main-footer {
+  min-height: 240px;
+}
+
 .main-footer__logo:hover {
   opacity: 0.8;
 }
@@ -48,4 +52,18 @@
 
 .copyright:active {
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    height: 147px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    height: 169px;
+  }
 }

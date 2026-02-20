@@ -10,6 +10,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
+  min-height: 266px;
+  background-color: $bg-basic-grey;
 }
 
 .programs__title {
@@ -32,14 +34,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
 }
 
 .programs__link:active {
   opacity: 0.3;
-}
-
-.programs__list {
-  background-color: $bg-basic-grey;
 }
 
 .programs__item--icon-cat-back {
@@ -50,4 +49,16 @@
 .programs__item--icon-cat-back2 {
   background-image: url("../../icons/stack.svg#icon-cat-back2");
   background-size: 67px 50px;
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .programs__item {
+    width: 570px;
+    height: 374px;
+  }
 }

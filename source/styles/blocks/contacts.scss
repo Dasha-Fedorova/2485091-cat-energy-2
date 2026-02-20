@@ -1,3 +1,10 @@
+.contacts__container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 112px;
+}
+
 .contacts__content {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -9,4 +16,35 @@
 .address {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    min-height: 200px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: greed;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacts__container {
+    position: absolute;
+    width: 565px;
+    height: 199px;
+    grid-area: 1/1/1/1;
+    z-index: 2;
+    border: 3px solid #000000;
+  }
+
+  .map__image {
+    width: 100%;
+    height: 400px;
+    border: 1px solid $title-color-text;
+    grid-area: 1/1/1/1;
+    z-index: 1;
+  }
 }
